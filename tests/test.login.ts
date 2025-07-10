@@ -1,6 +1,6 @@
 import { Helpers } from "../utils/Helpers";
 import { Actions } from "../utils/Actions";
-import { LoginPage } from "../pageobjects/login.page";
+import { LoginPage } from "../pageobjects/LoginPage";
 
 describe("Login Test", (): void => {
   it("should login with valid credentials", async (): Promise<void> => {

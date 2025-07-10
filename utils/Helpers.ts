@@ -1,4 +1,4 @@
-import { LoginPage } from "../pageobjects/login.page";
+import { LoginPage } from "../pageobjects/LoginPage";
 
 export class Helpers {
   /**
