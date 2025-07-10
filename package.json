@@ -13,7 +13,11 @@
     "wdio-wait-for": "^3.1.0"
   },
   "scripts": {
-    "local-tests": "rimraf allure-results allure-report && wdio run wdio.conf.ts && allure generate --clean && allure open",
+    "web-tests": "rimraf allure-results allure-report && wdio run web.conf.ts && allure generate --clean && allure open",
+    "api-tests": "rimraf allure-results allure-report && wdio run api.conf.ts && allure generate --clean && allure open",
     "prettier": "npx prettier --write ."
+  },
+  "dependencies": {
+    "axios": "^1.10.0"
   }
 }

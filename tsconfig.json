@@ -20,5 +20,5 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["test", "wdio.conf.ts"]
+  "include": ["test", "web.conf.ts"]
 }
