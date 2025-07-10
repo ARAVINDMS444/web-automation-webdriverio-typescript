@@ -1,4 +1,4 @@
-name: Run WebDriverIO Tests Locally
+name: Run WebDriverIO Tests
 
 on:
   push:
