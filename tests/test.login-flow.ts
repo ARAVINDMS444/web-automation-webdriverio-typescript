@@ -5,7 +5,7 @@ import { LoginPage } from "../pageobjects/LoginPage";
 describe("Login Test", (): void => {
   it("should login with valid credentials", async (): Promise<void> => {
     await Helpers.login("tomsmith", "SuperSecretPassword!");
-    await Actions.waitForElementToBeDisplayed(LoginPage.successMessage());
-    await Actions.assertElementIsVisible(LoginPage.successMessage());
+    await Actions.waitForElementToBeDisplayed(LoginPage.successMessage);
+    await Actions.assertElementIsVisible(LoginPage.successMessage);
   });
 });

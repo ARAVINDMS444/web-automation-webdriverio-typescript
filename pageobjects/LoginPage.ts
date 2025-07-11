@@ -7,19 +7,19 @@ export class LoginPage {
   /**
    * define selectors using getter methods
    */
-  static inputUsername(): ChainablePromiseElement {
+  static get inputUsername(): ChainablePromiseElement {
     return $("#username");
   }
 
-  static inputPassword(): ChainablePromiseElement {
+  static get inputPassword(): ChainablePromiseElement {
     return $("#password");
   }
 
-  static submitButton(): ChainablePromiseElement {
+  static get submitButton(): ChainablePromiseElement {
     return $('button[type="submit"]');
   }
 
-  static successMessage(): ChainablePromiseElement {
+  static get successMessage(): ChainablePromiseElement {
     return $("//div[contains(text(), 'You logged into a secure area!')]");
   }
 }

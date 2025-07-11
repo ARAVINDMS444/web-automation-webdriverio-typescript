@@ -7,8 +7,8 @@ export class Helpers {
    */
   static async login(username: string, password: string): Promise<void> {
     await browser.url("https://the-internet.herokuapp.com/login");
-    await LoginPage.inputUsername().setValue(username);
-    await LoginPage.inputPassword().setValue(password);
-    await LoginPage.submitButton().click();
+    await LoginPage.inputUsername.setValue(username);
+    await LoginPage.inputPassword.setValue(password);
+    await LoginPage.submitButton.click();
   }
 }
