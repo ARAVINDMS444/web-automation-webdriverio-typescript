@@ -1,4 +1,4 @@
-name: Run WebDriverIO Web and API Tests
+name: Run WebDriverIO Web Tests
 
 on:
   push:
@@ -30,7 +30,4 @@ jobs:
         run: npx prettier --check .
 
       - name: 🌐 Run WebDriverIO Web tests
-        run: npx wdio run web.conf.ts
-
-      - name: 🔌 Run WebDriverIO API tests
-        run: npx wdio run api.conf.ts
+        run: npx wdio run wdio.conf.ts
